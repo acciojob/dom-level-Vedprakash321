@@ -1,11 +1,11 @@
-const levetElement=document.getElementById("level");
+const levelElement=document.getElementById("level");
 let levelcount=1;
 while(true){
-	if(levetElement.tagName==="HTML"){
+	if(levelElement.tagName==="HTML"){
 		break;
 	}
-	levelElement=levelElement.parentNode();
+	levelElement = levelElement.parentNode();
 	levelcount++;
 	
 }
-aleart('The level of the element is: ${levelcount}');
+alert('The level of the element is: ${levelcount}');
