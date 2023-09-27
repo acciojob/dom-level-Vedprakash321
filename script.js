@@ -1,26 +1,11 @@
-//your JS code here. If required.
-// Function to determine the DOM level of an element
-function getDomLevel(elementId) {
-    const targetElement = document.getElementById(elementId);
-
-    if (!targetElement) {
-        alert("Element not found.");
-        return;
-    }
-
-    let domLevel = 0;
-    let currentNode = targetElement;
-
-    while (currentNode !== document.documentElement) {
-        currentNode = currentNode.parentNode;
-        domLevel++;
-    }
-
-    // Add 1 to include the root html element
-    domLevel++;
-
-    alert(`The level of the element is: ${domLevel}`);
+const levetElement=document.getElementById("level");
+let levelcount=1;
+while(true){
+	if(levetElement.tagName==="HTML"){
+		break;
+	}
+	levelElement=levelElement.parentNode();
+	levelcount++;
+	
 }
-
-// Call the function with the element id "level"
-getDomLevel("level");
+aleart('The level of the element is: ${levelcount}');
