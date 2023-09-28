@@ -1,11 +1,17 @@
-const levelElement=document.getElementById("level");
-let levelcount=1;
+let levelElement=document.getElementById("level");
+let levelcount = 1;
 while(true){
-	if(levelElement.tagName==="HTML"){
+	
+	if(levelElement.tagName === "HTML"){
 		break;
 	}
-	levelElement = levelElement.parentNode();
+	if(levelcount>1000){
+		break;
+	}
+	levelElement = levelElement.parentNode;
 	levelcount++;
 	
 }
-alert('The level of the element is: ${levelcount}');
+// alert("ojihugyvhb");
+// console.log(levelcount)
+alert(`The level of the element is: ${levelcount}`);
